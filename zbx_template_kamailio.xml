@@ -1,0 +1,2599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>5.0</version>
+    <date>2021-03-08T16:13:52Z</date>
+    <groups>
+        <group>
+            <name>Templates</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Kamailio Stats</template>
+            <name>Kamailio Stats</name>
+            <description>Pull Kamailio Stats using kamctl</description>
+            <groups>
+                <group>
+                    <name>Templates</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Kamailio Stats - Core</name>
+                </application>
+                <application>
+                    <name>Kamailio Stats - DNS</name>
+                </application>
+                <application>
+                    <name>Kamailio Stats - Pike</name>
+                </application>
+                <application>
+                    <name>Kamailio Stats - Registrar</name>
+                </application>
+                <application>
+                    <name>Kamailio Stats - Shmem</name>
+                </application>
+                <application>
+                    <name>Kamailio Stats - Sl</name>
+                </application>
+                <application>
+                    <name>Kamailio Stats - TCP</name>
+                </application>
+                <application>
+                    <name>Kamailio Stats - Tmx</name>
+                </application>
+                <application>
+                    <name>Kamailio Stats - Usrloc</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Bad Msg Hdr</name>
+                    <key>kamailio.stats[core:bad_msg_hdr]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Bad URIs Rcvd</name>
+                    <key>kamailio.stats[core:bad_URIs_rcvd]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Drop Replies</name>
+                    <key>kamailio.stats[core:drop_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Drop Requests</name>
+                    <key>kamailio.stats[core:drop_requests]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Err Replies</name>
+                    <key>kamailio.stats[core:err_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Err Requests</name>
+                    <key>kamailio.stats[core:err_requests]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Fwd Replies</name>
+                    <key>kamailio.stats[core:fwd_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Fwd Requests</name>
+                    <key>kamailio.stats[core:fwd_requests]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies</name>
+                    <key>kamailio.stats[core:rcv_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 1XX</name>
+                    <key>kamailio.stats[core:rcv_replies_1xx]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 1XX Bye</name>
+                    <key>kamailio.stats[core:rcv_replies_1xx_bye]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 1XX Cancel</name>
+                    <key>kamailio.stats[core:rcv_replies_1xx_cancel]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 1XX Invite</name>
+                    <key>kamailio.stats[core:rcv_replies_1xx_invite]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 1XX Message</name>
+                    <key>kamailio.stats[core:rcv_replies_1xx_message]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 1XX Prack</name>
+                    <key>kamailio.stats[core:rcv_replies_1xx_prack]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 1XX Refer</name>
+                    <key>kamailio.stats[core:rcv_replies_1xx_refer]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 1XX Reg</name>
+                    <key>kamailio.stats[core:rcv_replies_1xx_reg]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 1XX Update</name>
+                    <key>kamailio.stats[core:rcv_replies_1xx_update]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 2XX</name>
+                    <key>kamailio.stats[core:rcv_replies_2xx]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 2XX Bye</name>
+                    <key>kamailio.stats[core:rcv_replies_2xx_bye]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 2XX Cancel</name>
+                    <key>kamailio.stats[core:rcv_replies_2xx_cancel]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 2XX Invite</name>
+                    <key>kamailio.stats[core:rcv_replies_2xx_invite]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 2XX Message</name>
+                    <key>kamailio.stats[core:rcv_replies_2xx_message]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 2XX Prack</name>
+                    <key>kamailio.stats[core:rcv_replies_2xx_prack]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 2XX Refer</name>
+                    <key>kamailio.stats[core:rcv_replies_2xx_refer]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 2XX Reg</name>
+                    <key>kamailio.stats[core:rcv_replies_2xx_reg]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 2XX Update</name>
+                    <key>kamailio.stats[core:rcv_replies_2xx_update]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 3XX</name>
+                    <key>kamailio.stats[core:rcv_replies_3xx]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 3XX Bye</name>
+                    <key>kamailio.stats[core:rcv_replies_3xx_bye]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 3XX Cancel</name>
+                    <key>kamailio.stats[core:rcv_replies_3xx_cancel]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 3XX Invite</name>
+                    <key>kamailio.stats[core:rcv_replies_3xx_invite]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 3XX Message</name>
+                    <key>kamailio.stats[core:rcv_replies_3xx_message]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 3XX Prack</name>
+                    <key>kamailio.stats[core:rcv_replies_3xx_prack]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 3XX Refer</name>
+                    <key>kamailio.stats[core:rcv_replies_3xx_refer]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 3XX Reg</name>
+                    <key>kamailio.stats[core:rcv_replies_3xx_reg]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 3XX Update</name>
+                    <key>kamailio.stats[core:rcv_replies_3xx_update]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 4XX</name>
+                    <key>kamailio.stats[core:rcv_replies_4xx]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 4XX Bye</name>
+                    <key>kamailio.stats[core:rcv_replies_4xx_bye]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 4XX Cancel</name>
+                    <key>kamailio.stats[core:rcv_replies_4xx_cancel]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 4XX Invite</name>
+                    <key>kamailio.stats[core:rcv_replies_4xx_invite]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 4XX Message</name>
+                    <key>kamailio.stats[core:rcv_replies_4xx_message]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 4XX Prack</name>
+                    <key>kamailio.stats[core:rcv_replies_4xx_prack]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 4XX Refer</name>
+                    <key>kamailio.stats[core:rcv_replies_4xx_refer]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 4XX Reg</name>
+                    <key>kamailio.stats[core:rcv_replies_4xx_reg]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 4XX Update</name>
+                    <key>kamailio.stats[core:rcv_replies_4xx_update]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 5XX</name>
+                    <key>kamailio.stats[core:rcv_replies_5xx]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 5XX Bye</name>
+                    <key>kamailio.stats[core:rcv_replies_5xx_bye]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 5XX Cancel</name>
+                    <key>kamailio.stats[core:rcv_replies_5xx_cancel]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 5XX Invite</name>
+                    <key>kamailio.stats[core:rcv_replies_5xx_invite]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 5XX Message</name>
+                    <key>kamailio.stats[core:rcv_replies_5xx_message]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 5XX Prack</name>
+                    <key>kamailio.stats[core:rcv_replies_5xx_prack]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 5XX Refer</name>
+                    <key>kamailio.stats[core:rcv_replies_5xx_refer]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 5XX Reg</name>
+                    <key>kamailio.stats[core:rcv_replies_5xx_reg]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 5XX Update</name>
+                    <key>kamailio.stats[core:rcv_replies_5xx_update]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 6XX</name>
+                    <key>kamailio.stats[core:rcv_replies_6xx]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 6XX Bye</name>
+                    <key>kamailio.stats[core:rcv_replies_6xx_bye]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 6XX Cancel</name>
+                    <key>kamailio.stats[core:rcv_replies_6xx_cancel]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 6XX Invite</name>
+                    <key>kamailio.stats[core:rcv_replies_6xx_invite]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 6XX Message</name>
+                    <key>kamailio.stats[core:rcv_replies_6xx_message]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 6XX Prack</name>
+                    <key>kamailio.stats[core:rcv_replies_6xx_prack]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 6XX Refer</name>
+                    <key>kamailio.stats[core:rcv_replies_6xx_refer]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 6XX Reg</name>
+                    <key>kamailio.stats[core:rcv_replies_6xx_reg]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 6XX Update</name>
+                    <key>kamailio.stats[core:rcv_replies_6xx_update]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 18X</name>
+                    <key>kamailio.stats[core:rcv_replies_18x]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 401</name>
+                    <key>kamailio.stats[core:rcv_replies_401]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 404</name>
+                    <key>kamailio.stats[core:rcv_replies_404]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 407</name>
+                    <key>kamailio.stats[core:rcv_replies_407]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 480</name>
+                    <key>kamailio.stats[core:rcv_replies_480]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Replies 486</name>
+                    <key>kamailio.stats[core:rcv_replies_486]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests</name>
+                    <key>kamailio.stats[core:rcv_requests]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests ACK</name>
+                    <key>kamailio.stats[core:rcv_requests_ack]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests BYE</name>
+                    <key>kamailio.stats[core:rcv_requests_bye]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests CANCEL</name>
+                    <key>kamailio.stats[core:rcv_requests_cancel]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests INFO</name>
+                    <key>kamailio.stats[core:rcv_requests_info]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests INVITE</name>
+                    <key>kamailio.stats[core:rcv_requests_invite]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests MESSAGE</name>
+                    <key>kamailio.stats[core:rcv_requests_message]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests NOTIFY</name>
+                    <key>kamailio.stats[core:rcv_requests_notify]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests OPTIONS</name>
+                    <key>kamailio.stats[core:rcv_requests_options]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests PRACK</name>
+                    <key>kamailio.stats[core:rcv_requests_prack]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests PUBLISH</name>
+                    <key>kamailio.stats[core:rcv_requests_publish]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests REFER</name>
+                    <key>kamailio.stats[core:rcv_requests_refer]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests REGISTER</name>
+                    <key>kamailio.stats[core:rcv_requests_register]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests SUBSCRIBE</name>
+                    <key>kamailio.stats[core:rcv_requests_subscribe]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rcv Requests UPDATE</name>
+                    <key>kamailio.stats[core:rcv_requests_update]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Unsupported Methods</name>
+                    <key>kamailio.stats[core:unsupported_methods]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Core</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Failed Dns Request</name>
+                    <key>kamailio.stats[dns:failed_dns_request]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - DNS</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Slow Dns Request</name>
+                    <key>kamailio.stats[dns:slow_dns_request]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - DNS</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Blocked Ips</name>
+                    <key>kamailio.stats[pike:blocked_ips]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <status>DISABLED</status>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Pike</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Accepted Regs</name>
+                    <key>kamailio.stats[registrar:accepted_regs]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Registrar</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Default Expires Range</name>
+                    <key>kamailio.stats[registrar:default_expires_range]</key>
+                    <delay>1d</delay>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Registrar</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Default Expire</name>
+                    <key>kamailio.stats[registrar:default_expire]</key>
+                    <delay>1d</delay>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Registrar</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Expires Range</name>
+                    <key>kamailio.stats[registrar:expires_range]</key>
+                    <delay>1d</delay>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Registrar</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Max Contacts</name>
+                    <key>kamailio.stats[registrar:max_contacts]</key>
+                    <delay>1d</delay>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Registrar</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Max Expires</name>
+                    <key>kamailio.stats[registrar:max_expires]</key>
+                    <delay>1d</delay>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Registrar</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Rejected Regs</name>
+                    <key>kamailio.stats[registrar:rejected_regs]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Registrar</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Fragments</name>
+                    <key>kamailio.stats[shmem:fragments]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Shmem</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Free Size</name>
+                    <key>kamailio.stats[shmem:free_size]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Shmem</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Max Used Size</name>
+                    <key>kamailio.stats[shmem:max_used_size]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Shmem</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Real Used Size</name>
+                    <key>kamailio.stats[shmem:real_used_size]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Shmem</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Total Size</name>
+                    <key>kamailio.stats[shmem:total_size]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Shmem</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Used Size</name>
+                    <key>kamailio.stats[shmem:used_size]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <units>B</units>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Shmem</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>1xx Replies</name>
+                    <key>kamailio.stats[sl:1xx_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>2xx Replies</name>
+                    <key>kamailio.stats[sl:2xx_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>3xx Replies</name>
+                    <key>kamailio.stats[sl:3xx_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>4xx Replies</name>
+                    <key>kamailio.stats[sl:4xx_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>5xx Replies</name>
+                    <key>kamailio.stats[sl:5xx_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>6xx Replies</name>
+                    <key>kamailio.stats[sl:6xx_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>200 Replies</name>
+                    <key>kamailio.stats[sl:200_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>301 Replies</name>
+                    <key>kamailio.stats[sl:301_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>401 Replies</name>
+                    <key>kamailio.stats[sl:401_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>403 Replies</name>
+                    <key>kamailio.stats[sl:403_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>404 Replies</name>
+                    <key>kamailio.stats[sl:404_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>407 Replies</name>
+                    <key>kamailio.stats[sl:407_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>483 Replies</name>
+                    <key>kamailio.stats[sl:483_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>500 Replies</name>
+                    <key>kamailio.stats[sl:500_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Received ACKs</name>
+                    <key>kamailio.stats[sl:received_ACKs]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Sent Err Replies</name>
+                    <key>kamailio.stats[sl:sent_err_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Sent Replies</name>
+                    <key>kamailio.stats[sl:sent_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>XXX Replies</name>
+                    <key>kamailio.stats[sl:xxx_replies]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Sl</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Connect Failed</name>
+                    <key>kamailio.stats[tcp:connect_failed]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Connect Sucess</name>
+                    <key>kamailio.stats[tcp:connect_success]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Connect Reset</name>
+                    <key>kamailio.stats[tcp:con_reset]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Connect Timeout</name>
+                    <key>kamailio.stats[tcp:con_timeout]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Current Opened Connections</name>
+                    <key>kamailio.stats[tcp:current_opened_connections]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Current Write Queue Size</name>
+                    <key>kamailio.stats[tcp:current_write_queue_size]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Established</name>
+                    <key>kamailio.stats[tcp:established]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Local Reject</name>
+                    <key>kamailio.stats[tcp:local_reject]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Passive Open</name>
+                    <key>kamailio.stats[tcp:passive_open]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Sendq Full</name>
+                    <key>kamailio.stats[tcp:sendq_full]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Sent Timeout</name>
+                    <key>kamailio.stats[tcp:send_timeout]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - TCP</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>2xx Transactions</name>
+                    <key>kamailio.stats[tmx:2xx_transactions]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Tmx</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>3xx Transactions</name>
+                    <key>kamailio.stats[tmx:3xx_transactions]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Tmx</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>4xx Transactions</name>
+                    <key>kamailio.stats[tmx:4xx_transactions]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Tmx</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>5xx Transactions</name>
+                    <key>kamailio.stats[tmx:5xx_transactions]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Tmx</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>6xx Transactions</name>
+                    <key>kamailio.stats[tmx:6xx_transactions]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Tmx</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Active Transactions</name>
+                    <key>kamailio.stats[tmx:active_transactions]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Tmx</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Inuse Transactions</name>
+                    <key>kamailio.stats[tmx:inuse_transactions]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Tmx</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>UAC Transactions</name>
+                    <key>kamailio.stats[tmx:UAC_transactions]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Tmx</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>UAS Transactions</name>
+                    <key>kamailio.stats[tmx:UAS_transactions]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Tmx</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Location Contacts</name>
+                    <key>kamailio.stats[usrloc:location-contacts]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Usrloc</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Location Expires</name>
+                    <key>kamailio.stats[usrloc:location-expires]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Usrloc</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Location Users</name>
+                    <key>kamailio.stats[usrloc:location-users]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Usrloc</name>
+                        </application>
+                    </applications>
+                </item>
+                <item>
+                    <name>Registered Users</name>
+                    <key>kamailio.stats[usrloc:registered_users]</key>
+                    <history>7d</history>
+                    <trends>30d</trends>
+                    <applications>
+                        <application>
+                            <name>Kamailio Stats - Usrloc</name>
+                        </application>
+                    </applications>
+                </item>
+            </items>
+        </template>
+    </templates>
+    <graphs>
+        <graph>
+            <name>Kamailio - Core - Rcv Replies</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_1xx]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_2xx]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_3xx]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_4xx]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_5xx]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_6xx]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - Core - Rcv Replies 1XX</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_1xx_bye]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_1xx_cancel]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_1xx_invite]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_1xx_message]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_1xx_prack]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_1xx_refer]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>C7A72D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_1xx_reg]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>BA2A5D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_1xx_update]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - Core - Rcv Replies 2XX</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_2xx_bye]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_2xx_cancel]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_2xx_invite]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_2xx_message]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_2xx_prack]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_2xx_refer]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>C7A72D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_2xx_reg]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>BA2A5D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_2xx_update]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - Core - Rcv Replies 3XX</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_3xx_bye]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_3xx_cancel]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_3xx_invite]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_3xx_message]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_3xx_prack]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_3xx_refer]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>C7A72D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_3xx_reg]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>BA2A5D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_3xx_update]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - Core - Rcv Replies 4XX</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_4xx_bye]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_4xx_cancel]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_4xx_invite]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_4xx_message]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_4xx_prack]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_4xx_refer]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>C7A72D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_4xx_reg]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>BA2A5D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_4xx_update]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - Core - Rcv Replies 5XX</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_5xx_bye]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_5xx_cancel]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_5xx_invite]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_5xx_message]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_5xx_prack]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_5xx_refer]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>C7A72D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_5xx_reg]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>BA2A5D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_5xx_update]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - Core - Rcv Replies 6XX</name>
+            <graph_items>
+                <graph_item>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_6xx_bye]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_6xx_cancel]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_6xx_invite]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_6xx_message]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_6xx_prack]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>C7A72D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_6xx_refer]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>BA2A5D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_6xx_reg]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>F230E0</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_replies_6xx_update]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - Core - Rcv Requests</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_ack]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_bye]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_cancel]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_info]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_invite]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>C7A72D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_message]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>BA2A5D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_notify]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>8</sortorder>
+                    <color>F230E0</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_options]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>9</sortorder>
+                    <color>5CCD18</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_prack]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>10</sortorder>
+                    <color>BB2A02</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_publish]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>11</sortorder>
+                    <color>AC41A5</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_refer]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>12</sortorder>
+                    <color>89ABF8</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_register]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>13</sortorder>
+                    <color>7EC25C</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_subscribe]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>14</sortorder>
+                    <color>3165D5</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:rcv_requests_update]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>15</sortorder>
+                    <color>79A277</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[core:unsupported_methods]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - SL - Replies</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:1xx_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:2xx_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:3xx_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:4xx_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:5xx_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:6xx_replies]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - SL - Replies by Code</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:200_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:301_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:401_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:403_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:404_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:407_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>C7A72D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:483_replies]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>BA2A5D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[sl:500_replies]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - TCP</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:connect_failed]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:con_reset]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:connect_success]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:con_timeout]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:current_opened_connections]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <color>6C59DC</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:current_write_queue_size]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>6</sortorder>
+                    <color>C7A72D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:established]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>7</sortorder>
+                    <color>BA2A5D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:local_reject]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>8</sortorder>
+                    <color>F230E0</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:passive_open]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>9</sortorder>
+                    <color>5CCD18</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:sendq_full]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>10</sortorder>
+                    <color>BB2A02</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tcp:send_timeout]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - TMX - Transactions</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tmx:2xx_transactions]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tmx:3xx_transactions]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tmx:4xx_transactions]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tmx:5xx_transactions]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <color>FC6EA3</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[tmx:6xx_transactions]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+        <graph>
+            <name>Kamailio - Usrloc</name>
+            <graph_items>
+                <graph_item>
+                    <color>199C0D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[usrloc:location-contacts]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>1</sortorder>
+                    <color>F63100</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[usrloc:location-expires]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>2</sortorder>
+                    <color>2774A4</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[usrloc:location-users]</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>3</sortorder>
+                    <color>F7941D</color>
+                    <item>
+                        <host>Kamailio Stats</host>
+                        <key>kamailio.stats[usrloc:registered_users]</key>
+                    </item>
+                </graph_item>
+            </graph_items>
+        </graph>
+    </graphs>
+</zabbix_export>
